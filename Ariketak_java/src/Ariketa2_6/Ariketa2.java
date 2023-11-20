@@ -38,7 +38,11 @@ public class Ariketa2 {
 		
 		if(mayus=='D') {
 			return diruKopurua*aldaketatasa;
-		}else if(mayus=='E') {}
+		}else if(mayus=='E') {
+			return diruKopurua * aldaketatasa;
+		}else {
+			System.out.println("Txanpon okerra");
+		}
 	}
 
 }
