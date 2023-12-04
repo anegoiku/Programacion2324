@@ -6,51 +6,45 @@ public class Ariketa2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// Metodoa sortu, "diruKopurua" double-a eta "aldaketaTxanpona" char-a jasotzen
+		// dituena. "D" jasotzen badu, kopurua eurotan dago eta dolarretara pasatu behar
+		// da. "E" jasotzen badu, kontrako bihurketa burutu behar du. Jasotzen den
+		// karakterea maiuskuletan edo minuskuletan egon daiteke.
 
-		
+		// Bariableak
+		double diruKopurua, emaitza;
+		char txanpona;
+		Scanner tek = new Scanner(System.in);
 
-				// TODO Auto-generated method stub
-				// Metodoa sortu, "diruKopurua" double-a eta "aldaketaTxanpona" char-a jasotzen
-				// dituena. "D" jasotzen badu, kopurua eurotan dago eta dolarretara pasatu behar
-				// da. "E" jasotzen badu, kontrako bihurketa burutu behar du. Jasotzen den
-				// karakterea maiuskuletan edo minuskuletan egon daiteke.
+		System.out.println("Sartu diru kopurua:");
+		diruKopurua = tek.nextDouble();
 
-				// Bariableak
-				double diruKopurua, emaitza;
-				char txanpona;
-				Scanner tek = new Scanner(System.in);
+		System.out.println("Ze diru mota da?");
+		System.out.println("E(euro)");
+		System.out.println("D(dolar)");
+		txanpona = tek.next().charAt(0);
 
-				System.out.println("Sartu diru kopurua:");
-				diruKopurua = tek.nextDouble();
+		emaitza = TxanponAldaketa(diruKopurua, txanpona);
 
-				System.out.println("Ze diru mota da?");
-				System.out.println("E(euro)");
-				System.out.println("D(dolar)");
-				txanpona = tek.next().charAt(0);
+		System.out.println("Aldaketa: " + emaitza);
 
-				emaitza = TxanponAldaketa(diruKopurua, txanpona);
+		tek.close();
 
-				System.out.println("Aldaketa: " + emaitza);
+	}
 
-				tek.close();
+	private static double TxanponAldaketa(double diruKopurua, char txanpona) {
+		double aldaketatasa = 1.18;
+		char mayus = Character.toUpperCase(txanpona);
 
-			}
+		if (mayus == 'D') {
+			return diruKopurua * aldaketatasa;
+		} else if (mayus == 'E') {
+			return diruKopurua / aldaketatasa;
+		} else {
+			System.out.println("Txanpon okerra");
+			return diruKopurua;
+		}
 
-			private static double TxanponAldaketa(double diruKopurua, char txanpona) {
-				double aldaketatasa = 1.18;
-				char mayus = Character.toUpperCase(txanpona);
-
-				if (mayus == 'D') {
-					return diruKopurua * aldaketatasa;
-				} else if (mayus == 'E') {
-					return diruKopurua / aldaketatasa;
-				} else {
-					System.out.println("Txanpon okerra");
-					return diruKopurua;
-				}
-	
-
-		
 	}
 
 }
