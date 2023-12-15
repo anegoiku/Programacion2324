@@ -77,6 +77,10 @@ public class Ariketa7 {
 				gorde(NAN, iz, ab, sal);
 				break;
 				
+			case 5:
+				System.out.println("AMAIERA");
+				break;
+				
 			default: System.out.println("ERROREA");
 			
 			}
