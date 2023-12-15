@@ -19,8 +19,7 @@ public class Pokemon {
 		// Metodoak, datuakKargatu, datuakModifikatu eta datuakGorde.
 
 		// Bariableak
-		File file = new File(
-				"C:\\Users\\1AW3-14\\Documents\\Copia de seguridad\\Ariketak_java\\src\\Ariketa2_7\\pokemons.csv");
+		File file = new File("C:\\Users\\1AW3-14\\Documents\\Copia de seguridad\\Ariketak_java\\src\\Ariketa2_7\\pokemons.csv");
 		FileReader reader = new FileReader(file);
 		BufferedReader buffer = new BufferedReader(reader);
 		Scanner tek = new Scanner(System.in);

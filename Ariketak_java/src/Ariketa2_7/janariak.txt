@@ -1,3 +1,4 @@
+Izenak;Egoerak;Kaloreak;Koipeak;Proteinak;Karbohidratoak;Motak.
 acederas;crudas;18;2,50;0,40;2,20;hotaliza
 acederas;cocidas;5;0,90;0,10;1,10;hotaliza
 acelgas;crudas;18;1,90;0,30;2,40;hotaliza
