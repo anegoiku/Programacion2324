@@ -1,4 +1,4 @@
-package AzterketaFinala;
+package AzterketaFinala1;
 
 import java.util.Scanner;
 
