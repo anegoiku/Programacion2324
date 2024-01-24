@@ -1,12 +1,14 @@
 package Ariketa3_3;
 
+import java.util.ArrayList;
+
 public class Animaliak {
 	private String izena;
 	private String espeziea;
 	private int adina;
-	private String habitat;
+	private ArrayList<String> habitat;
 	
-	public Animaliak(String izena, String espeziea, int adina, String habitat) {
+	public Animaliak(String izena, String espeziea, int adina, ArrayList<String> habitat) {
 		super();
 		this.izena = izena;
 		this.espeziea = espeziea;
@@ -45,11 +47,11 @@ public class Animaliak {
 		this.adina = adina;
 	}
 
-	public String getHabitat() {
+	public ArrayList<String> getHabitat() {
 		return habitat;
 	}
 
-	public void setHabitat(String habitat) {
+	public void setHabitat(ArrayList<String> habitat) {
 		this.habitat = habitat;
 	}
 
