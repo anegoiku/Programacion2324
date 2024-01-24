@@ -55,6 +55,10 @@ public Ikastaroa(String tituloa, String descripzioa, String irakaslea, ArrayList
 	this.irakaslea = irakaslea;
 	this.ikasleaList = ikasleaList;
 }
+public Ikastaroa() {
+	// TODO Auto-generated constructor stub
+}
+
 public static void ikasleaGehitu(ArrayList<Ikaslea> ikasleaList) {
 //	Scanner tek=new Scanner(System.in);
 //	ikaslea ikasleBerria = new ikaslea ();
