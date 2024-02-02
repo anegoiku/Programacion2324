@@ -10,8 +10,12 @@ import java.util.Scanner;
 public class KudeaketaAPP {
 
 	public static void main(String[] args) throws IOException {
-		// IKASLEAK
+		
+		//PRIMIERO EL MENUUU
+		
 		Scanner tek=new Scanner(System.in);
+		
+		// IKASLEAK
 		File fileikasleak=new File("C:\\Users\\1AW3-14\\Documents\\Copia de seguridad\\Ariketak_java\\src\\Ariketa3_6\\ikasleak.txt");
 		FileReader frasle=new FileReader(fileikasleak);
 		BufferedReader brasle=new BufferedReader(frasle);
@@ -41,7 +45,7 @@ public class KudeaketaAPP {
 			ikasle.setAdina(Integer.parseInt(zatiakbat[1]));
 			
 			for(int i=2; i<zatiakbat.length; i++) {
-				
+			
 			}
 			
 			
